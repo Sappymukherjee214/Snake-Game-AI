@@ -24,6 +24,7 @@ NeuralSnake AI is a high-performance, visually stunning Reinforcement Learning e
 ## 🧠 How the AI Works
 
 The snake perceives the world through a 12-feature state vector:
+
 1. **Food Proximity**: Relative direction of food (North, South, East, West).
 2. **Wall/Body Danger**: Immediate danger detection in 4 directions.
 3. **Movement State**: Current direction of travel.
