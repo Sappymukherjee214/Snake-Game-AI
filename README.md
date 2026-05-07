@@ -2,7 +2,6 @@
 
 NeuralSnake AI is a high-performance, visually stunning Reinforcement Learning environment where a Deep Q-Network (DQN) agent learns to master the classic Snake game directly in your browser.
 
-
 ## 🚀 Key Features
 
 - **Deep Q-Learning (DQN) Brain**: Powered by **TensorFlow.js**, the agent uses experience replay and target networks to stabilize learning and maximize its survival rate.
