@@ -9,7 +9,7 @@ NeuralSnake AI is a high-performance, visually stunning Reinforcement Learning e
 - **Deep Q-Learning (DQN) Brain**: Powered by **TensorFlow.js**, the agent uses experience replay and target networks to stabilize learning and maximize its survival rate.
 - **AI Vision Overlay**: Real-time visualization of the snake's sensor data. See the "line-of-sight" to food and proximity sensors detecting immediate danger.
 - **Premium Dashboard**: A sleek, dark-mode interface built with **React** and **Vite**, featuring glassmorphism aesthetics and neon-glow visuals.
-- **Brain Management System**: 
+- **Brain Management System**:
   - **Save/Load**: Persist your trained models to LocalStorage.
   - **Export/Import**: Download brain files to share or backup your agent's progress.
 - **Live Metrics**: Real-time tracking of Epsilon decay (exploration rate), episode history, and simulation speed control.
