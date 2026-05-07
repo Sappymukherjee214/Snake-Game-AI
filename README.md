@@ -45,17 +45,20 @@ The snake perceives the world through a 12-feature state vector:
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/Sappymukherjee214/Snake-Game-AI.git
    cd Snake-Game-AI
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    ```
 
 3. Start the development server:
+
    ```bash
    npm run dev
    ```
