@@ -43,6 +43,7 @@ The snake perceives the world through a 12-feature state vector:
 - npm or yarn
 
 ### Installation
+
 1. Clone the repository:
    ```bash
    git clone https://github.com/Sappymukherjee214/Snake-Game-AI.git
@@ -62,18 +63,21 @@ The snake perceives the world through a 12-feature state vector:
 4. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ## 🕹️ Usage
+
 1. Click **Resume** to start the simulation.
 2. Toggle **Training ON** to enable the DQN learning loop.
 3. Adjust the **Simulation Speed** slider to accelerate training episodes (up to 200 steps/sec).
 4. Once you have a high score, click **Save to Local** to keep the brain's progress.
 
 ## 🗺️ Roadmap
+
 - [ ] Multi-snake parallel training.
 - [ ] Neural network activation visualizer.
 - [ ] Custom obstacle editor.
 - [ ] Genetic Algorithm (GA) comparison mode.
 
 ## 📄 License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---
