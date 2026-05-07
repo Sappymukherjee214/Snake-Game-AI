@@ -2,7 +2,6 @@
 
 NeuralSnake AI is a high-performance, visually stunning Reinforcement Learning environment where a Deep Q-Network (DQN) agent learns to master the classic Snake game directly in your browser.
 
-![Snake AI Dashboard](https://raw.githubusercontent.com/Sappymukherjee214/Snake-Game-AI/main/src/assets/hero.png) *(Note: Replace with your actual hero image link or use the screenshot path)*
 
 ## 🚀 Key Features
 
