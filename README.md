@@ -1,73 +1,77 @@
-# React + TypeScript + Vite
+# NeuralSnake AI 🐍🧠
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+NeuralSnake AI is a high-performance, visually stunning Reinforcement Learning environment where a Deep Q-Network (DQN) agent learns to master the classic Snake game directly in your browser.
 
-Currently, two official plugins are available:
+![Snake AI Dashboard](https://raw.githubusercontent.com/Sappymukherjee214/Snake-Game-AI/main/src/assets/hero.png) *(Note: Replace with your actual hero image link or use the screenshot path)*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Key Features
 
-## React Compiler
+- **Deep Q-Learning (DQN) Brain**: Powered by **TensorFlow.js**, the agent uses experience replay and target networks to stabilize learning and maximize its survival rate.
+- **AI Vision Overlay**: Real-time visualization of the snake's sensor data. See the "line-of-sight" to food and proximity sensors detecting immediate danger.
+- **Premium Dashboard**: A sleek, dark-mode interface built with **React** and **Vite**, featuring glassmorphism aesthetics and neon-glow visuals.
+- **Brain Management System**: 
+  - **Save/Load**: Persist your trained models to LocalStorage.
+  - **Export/Import**: Download brain files to share or backup your agent's progress.
+- **Live Metrics**: Real-time tracking of Epsilon decay (exploration rate), episode history, and simulation speed control.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend**: React 18, TypeScript, Vite
+- **AI Engine**: TensorFlow.js
+- **Icons**: Lucide-React
+- **Styling**: Vanilla CSS (Modern Design System)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🧠 How the AI Works
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+The snake perceives the world through a 12-feature state vector:
+1. **Food Proximity**: Relative direction of food (North, South, East, West).
+2. **Wall/Body Danger**: Immediate danger detection in 4 directions.
+3. **Movement State**: Current direction of travel.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Reward Structure:
+- **🍎 Eat Food**: `+10`
+- **💀 Collision**: `-100`
+- **⏳ Each Step**: `-0.1` (Encourages efficiency and pathfinding)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🏃 Getting Started
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Sappymukherjee214/Snake-Game-AI.git
+   cd Snake-Game-AI
+   ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## 🕹️ Usage
+1. Click **Resume** to start the simulation.
+2. Toggle **Training ON** to enable the DQN learning loop.
+3. Adjust the **Simulation Speed** slider to accelerate training episodes (up to 200 steps/sec).
+4. Once you have a high score, click **Save to Local** to keep the brain's progress.
+
+## 🗺️ Roadmap
+- [ ] Multi-snake parallel training.
+- [ ] Neural network activation visualizer.
+- [ ] Custom obstacle editor.
+- [ ] Genetic Algorithm (GA) comparison mode.
+
+## 📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+---
+Built with ❤️ by [Saptarshi Mukherjee](https://github.com/Sappymukherjee214)
