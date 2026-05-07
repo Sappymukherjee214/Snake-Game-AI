@@ -30,6 +30,7 @@ The snake perceives the world through a 12-feature state vector:
 3. **Movement State**: Current direction of travel.
 
 ### Reward Structure:
+
 - **🍎 Eat Food**: `+10`
 - **💀 Collision**: `-100`
 - **⏳ Each Step**: `-0.1` (Encourages efficiency and pathfinding)
