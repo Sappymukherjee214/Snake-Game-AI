@@ -20,11 +20,11 @@ export interface GameState {
 export class SnakeGame {
   private width: number;
   private height: number;
-  private snake: Point[];
-  private food: Point;
-  private direction: Direction;
-  private score: number;
-  private isGameOver: boolean;
+  private snake!: Point[];
+  private food!: Point;
+  private direction!: Direction;
+  private score!: number;
+  private isGameOver!: boolean;
 
   constructor(width: number = 20, height: number = 20) {
     this.width = width;
