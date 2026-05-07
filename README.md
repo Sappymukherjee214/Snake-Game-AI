@@ -29,7 +29,7 @@ The snake perceives the world through a 12-feature state vector:
 2. **Wall/Body Danger**: Immediate danger detection in 4 directions.
 3. **Movement State**: Current direction of travel.
 
-### Reward Structure:
+### Reward Structure
 
 - **🍎 Eat Food**: `+10`
 - **💀 Collision**: `-100`
